@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matthew Koci – Resume</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            background: #fff;
+            margin: 40px auto;
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #222;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        /* Section Headings */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #007acc;
+            font-size: 1.6em;
+        }
+
+        /* Content Formatting */
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Experience & Education Entries */
+        .experience,
+        .education {
+            margin-bottom: 25px;
+        }
+
+        .experience h3,
+        .education h3 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #222;
+        }
+
+        .experience h4,
+        .education h4 {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
+        }
+
+        .dates {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>MATTHEW KOCI</h1>
+            <p>26 Castle View Drive • Yarmouth, ME 04096</p>
+            <p>(347) 260-5477 • <a href="mailto:mkoci@hey.com">mkoci@hey.com</a></p>
+            <p>
+                <a href="https://mattkoci.com" target="_blank">mattkoci.com</a> •
+                <a href="https://www.linkedin.com/in/matt-koci/" target="_blank">LinkedIn</a> •
+                <a href="https://github.com/mkoci" target="_blank">GitHub</a>
+            </p>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="section summary">
+            <h2>SUMMARY</h2>
+            <p>
+                Accomplished Full Stack / Cloud Engineer and Technical Team Lead with extensive experience architecting
+                and delivering complex, cloud-based systems. Real-world experience with reducing deployment times,
+                optimizing resource utilization, and driving multi-million-dollar enterprise partnerships. Adept at
+                leading cross-functional teams, mentoring engineers, and transforming technical challenges into
+                innovative, scalable solutions.
+            </p>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="section experience">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+
+            <!-- Scala Computing -->
+            <div class="experience">
+                <h3>Scala Computing</h3>
+                <p>Full-Time | 4 yrs 11 mos<br>New York, NY / Remote</p>
+
+                <!-- Technical Team Lead -->
+                <h4>Technical Team Lead <span class="dates">(Feb 2024 – Feb 2025)</span></h4>
+                <ul>
+                    <li><strong>Launched and Scaled the Scala Computing Network Emulation Service:</strong> Developed a
+                        multi-tenant datacenter emulation platform enabling network and sales engineers to emulate
+                        complex network topologies in the cloud.</li>
+                    <li><strong>Optimized VM Orchestration:</strong> Reduced deployment time for 30-VM topologies from
+                        over 25 minutes to ~7 minutes by designing a Firecracker-based deployer service that dynamically
+                        scaled based on resource demands.</li>
+                    <li><strong>Streamlined Bare-Metal Readiness:</strong> Redesigned pool clusters and introduced a
+                        “cold pool” strategy, slashing bare-metal server readiness from 10 minutes to 10 seconds—a 100×
+                        improvement.</li>
+                    <li><strong>Enhanced Resource Allocation:</strong> Developed core deployment algorithm to predict and
+                        allocate the optimal number of deployers (via Pulumi within Firecracker VMs) based on workload
+                        size, ensuring efficient vCPU and memory utilization.</li>
+                    <li><strong>Secured End-to-End Connectivity:</strong> Engineered an integrated SSH solution using
+                        Headscale/Tailscale authenticated through AWS Cognito, enabling secure, on-demand VM
+                        authentication across multi-tenant environments.</li>
+                    <li><strong>Drove Enterprise Partnerships:</strong> Engaged directly with Keysight Technologies and
+                        Juniper Networks, leading to multi-million-dollar future usage commitments and successful
+                        integration of our backend services into their product ecosystems.</li>
+                </ul>
+
+                <!-- Senior Full Stack Engineer -->engineers to engineers to 
+                <h4>Senior Full Stack Engineer <span class="dates">(Oct 2021 – Jan 2024)</span></h4>
+                <ul>
+                    <li><strong>Delivered Topology Editor:</strong> Led a greenfield project to implement an
+                    incredibly complex topology editor enabling the custom design and emulation of large data center topologies in a web browser.</li>
+                    <li><strong>Expanded the CAE Vertical:</strong> Owned entire codebase for the deployment of on-demand
+                     heterogeneous networks for collaborative circuit design and synthesis</li>
+                    <li><strong>Designed and Implemented</strong> Leveraged Terraform and developed an in-house Go/AWS SDK orchestrator to deploy design/validation clusters
+                    allowing global users to collaborate and validate circuit designs anytime, anywhere.</li>
+                    <li><strong>Collaborated cross-functionally:</strong> Aligned technical strategies with business
+                        objectives, collaborated across verticals and led large code consolidations and dependency updates.</li>
+                </ul>
+
+                <!-- Full Stack Engineer -->
+                <h4>Full Stack Engineer <span class="dates">(Mar 2020 – Sep 2021)</span></h4>
+                <ul>
+                    <li><strong>Developed the Collaborative Design Vertical:</strong> Designed and developed an on-demand Active Directory domain for Engineers to
+                    collaborate on circuit designs using various Cadence tools.</li>
+                    <li><strong>Implemented E2E Solution:</strong> Built greenfield project to provision Windows / Fedora nodes on-demand for the design and synthesis of circuits. </strong></li>
+                    <li><strong>Managed Enterprise Relations:</strong> with Zebra Technologies in a partnership to deliver a collaborative tool to their design teams across continents.</li>
+                </ul>
+            </div>
+
+            <!-- Unpakt -->
+            <div class="experience">
+                <h3>Unpakt – New York, NY</h3>
+                <h4>Full Stack Engineer <span class="dates">(Feb 2018 – Mar 2020)</span></h4>
+                <ul>
+                    <li><strong>Modernized Front-End Architecture:</strong> Refactored an entire AngularJS codebase into
+                        React/Redux, leading to improved performance and maintainability.</li>
+                    <li><strong>Led Feature Enhancements:</strong> Developed new product features and coordinated with
+                        junior developers and an external QA team via Jira to meet tight deadlines.</li>
+                </ul>
+            </div>
+
+            <!-- Skaggs Creative -->
+            <div class="experience">
+                <h3>Skaggs Creative – New York, NY</h3>
+                <h4>Freelance Web Developer <span class="dates">(Nov 2017 – May 2018)</span></h4>
+                <ul>
+                    <li>Collaborated with multiple small business clients to upgrade and troubleshoot ExpressionEngine
+                        sites, ensuring smooth user experiences and timely resolution of legacy code issues.</li>
+                </ul>
+            </div>
+
+            <!-- PoliteApp, LLC -->
+            <div class="experience">
+                <h3>PoliteApp, LLC – New York, NY</h3>
+                <h4>Founding Member, Operations Officer <span class="dates">(2013 – 2016)</span></h4>
+                <ul>
+                    <li><strong>Founded Political Web App:</strong> Led development for a game-centric,
+                        data-driven web application to apply data science and modern visualization to local, state, and national voting.</li>
+                    <li><strong>Enhanced Data Capabilities:</strong> Developed a Python-based data miner to scrape and
+                        analyze Library of Congress data, allowing alignment of voters' opinions with current candidates.</li>
+                    <li>Participated in the Zahn Social Entrepreneurship competition and startup incubator, showcasing
+                        early-stage product leadership.</li>
+                </ul>
+            </div>
+
+            <!-- Nanoelectronics Laboratory at CCNY -->
+            <div class="experience">
+                <h3>Nanoelectronics Laboratory at CCNY – New York, NY</h3>
+                <h4>Research Assistant <span class="dates">(2013 – 2014)</span></h4>
+                <ul>
+                    <li>Contributed to low temperature research by fabricating meso-scale graphene and boron-nitride
+                        heterostructures.</li>
+                    <li>Managed silicon etching, device fabrication, and network infrastructure in support of research
+                        initiatives at institutions such as Stanford and Columbia.</li>
+                    <li>Obtained C-13 Lab Safety license for the state of New York.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="section education">
+            <h2>EDUCATION</h2>
+            <div class="education">
+                <h3>City College of New York – New York, NY</h3>
+                <h4 class="dates">Bachelor of Engineering (B.E.) in Computer Engineering (2011 – 2018)</h4>
+                <p>Focus: Low-level programming, integrated circuit design, and solid-state physics</p>
+            </div>
+            <div class="education">
+                <h3>Middle College High School – Nashville, TN</h3>Middle
+                <h4 class="dates">High School Diploma (1998 – 2001)</h4>
+            </div>
+        </section>
+
+        <!-- Additional Information Section -->
+        <section class="section additional-info">
+            <h2>ADDITIONAL INFORMATION</h2>
+            <ul>
+                <li><strong>Leadership & Mentorship:</strong> Consistently fostered a collaborative environment by
+                    actively participating in design reviews, mentoring team members, and driving solution-oriented
+                    discussions—even under high-pressure deadlines.</li>
+                <li><strong>Enterprise Impact:</strong> Instrumental in delivering key releases and features for
+                    strategic partnerships, directly influencing product strategy and market positioning.</li>
+                <li><strong>Results-Driven Approach:</strong> Achieved measurable improvements in system performance
+                    (70% faster VM deployments, 100× faster server readiness) through innovative automation and
+                    orchestration strategies.</li>
+            </ul>
+            <p>References and detailed project case studies available upon request.</p>
+        </section>
+    </div>
+</body>
+
+</html>
